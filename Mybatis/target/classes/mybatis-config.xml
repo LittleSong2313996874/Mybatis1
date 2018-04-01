@@ -6,7 +6,8 @@
 <configuration>
 	
 	<!-- 加载资源文件 -->
-    <properties resource="jdbc.properties" />   
+ <!--    <properties resource="log4j.properties" />   -->
+    <properties resource="jdbc.properties" />  
 	
 	<!-- default:选择默认使用的哪一个配置 -->
     <environments default="mysql-dev">

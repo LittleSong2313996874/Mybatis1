@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import a.b.entity.Person;
 import a.b.util.MybatisUtil;
 
+
 public class PersonDao {
 
 	/**
@@ -63,6 +64,7 @@ public class PersonDao {
 		SqlSession sqlSession = null;
 		try{
 			sqlSession = MybatisUtil.getsqlSession();
+			System.out.println("haole");
 			return sqlSession.selectList(Person.class.getName()+".findAll");
 		}catch(Exception e){
 			e.printStackTrace();

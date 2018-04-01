@@ -41,7 +41,11 @@ public class Person {
 	}
 	
 	
-	
+	@Override
+    public String toString() {
+        return "" + id + "," + NAME +","+gender+ "," + age + "\n";
+        
+    }
 	
 	
 }
