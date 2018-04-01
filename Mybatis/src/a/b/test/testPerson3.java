@@ -15,11 +15,11 @@ import a.b.util.MybatisUtil;
 
 public class testPerson3 {
 	
-	static PersonDao3 persondao;
-	static SqlSession sqlSession;
+    static PersonDao3 persondao;
+    static SqlSession sqlSession;
 
-	 // 使用了该元数据的方法在每个测试方法执行之前都要执行一次。（方法开始前执行）
-	@Before
+    // 使用了该元数据的方法在每个测试方法执行之前都要执行一次。（方法开始前执行）
+    @Before
     public void init() throws Exception {
     	persondao = null;
     	sqlSession = null;
